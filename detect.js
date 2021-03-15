@@ -39,10 +39,6 @@ function draw() {
   fill(244);//255 try out
   text(label,width/2,height-16);
   
-  let sound='https://github.com/fiqgant/Anti-Ngantuk/blob/main/audio/alert.wav';
-  if(label =='Mask'){
-    audio.play();
-  }
   
   let emoji='❌';
   if(label =='Mask'){
