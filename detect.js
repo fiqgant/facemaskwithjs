@@ -39,6 +39,11 @@ function draw() {
   fill(244);//255 try out
   text(label,width/2,height-16);
   
+  let sound='https://github.com/fiqgant/Anti-Ngantuk/blob/main/audio/alert.wav';
+  if(label =='Mask'){
+    audio.play();
+  }
+  
   let emoji='❌';
   if(label =='Mask'){
     emoji='✔️'
@@ -47,6 +52,8 @@ function draw() {
   textSize(50);
   text(emoji,width/2,height/2);
 }
+
+
 
 
 // STEP 3: Get the classification!
